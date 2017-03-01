@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "css-loader": "^0.26.2",
-    "style-loader": "^0.13.2"
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8"
   }
 }
