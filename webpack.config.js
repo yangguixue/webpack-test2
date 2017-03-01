@@ -1,13 +1,23 @@
-
+var webpack = require('webpack');
 
 module.exports = {
   entry: {
     entry1: './src/main.js',
     entry2: './src/main2.jsx',
   },
+
   output: {
     filename: './[name].js',
   },
+
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    })
+  ],
+
   module: {
     loaders: [{
       test: /\.jsx?$/,
