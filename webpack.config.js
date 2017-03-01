@@ -7,5 +7,11 @@ module.exports = {
   },
   output: {
     filename: './[name].js',
+  },
+  module: {
+    loaders: [{
+      test: /\.css$/,
+      loader: 'style-loader!css-loader',
+    }]
   }
 }
