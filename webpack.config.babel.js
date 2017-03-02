@@ -1,13 +1,12 @@
+import path from 'path';
 import webpack from 'webpack';
+import HtmlwebpackPlugin from 'html-webpack-plugin';
 
 module.exports = {
-  entry: {
-    entry1: './src/main.js',
-    entry2: './src/main2.jsx',
-  },
+  entry: './src/main2.jsx',
 
   output: {
-    filename: './[name].js',
+    filename: './bundle.js',
   },
 
   plugins: [
@@ -15,7 +14,11 @@ module.exports = {
       compress: {
         warnings: false
       }
-    })
+    }),
+    new HtmlwebpackPlugin({
+      template: './src/index.html',
+      hash: false,
+    }),
   ],
 
   module: {
