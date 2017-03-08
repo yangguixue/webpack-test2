@@ -21,3 +21,7 @@ node_modules
   <pre><code>{ "presets": ["es2015"] } //文件内容</code></pre>
   
 * 重新启动webpack
+
+###3. 生产环境和开发环境
+
+  https://segmentfault.com/a/1190000006952432
