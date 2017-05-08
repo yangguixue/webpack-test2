@@ -35,3 +35,6 @@ node_modules
       extensions: ['.js', '.jsx', '.json'],
     },
   </code></pre>
+
+### 5. 可以让其他人访问自己本地的代码
+    webpack.dev.js里 devServer加上disableHostCheck: true
