@@ -1,5 +1,7 @@
 # 搭建webpack遇到的问题及解决办法
 
+https://segmentfault.com/a/1190000006178770#articleHeader6
+
 ### 1. 添加.gitignore 文件
 有些不需要git管理的文件就写到这个文件里，比如说常见的node_modules，.DS_Store文件，在git add的时候我们不需要把他们提交上去，就放到这个文件里，再git status的时候我们就看不到这些文件了
 
